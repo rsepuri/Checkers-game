@@ -2,26 +2,38 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[page loaded succesfully]]>
+      <![CDATA[Page loaded succesfully]]>
+    </line>
+    <line>
+      <![CDATA[It's your move]]>
+    </line>
+    <line>
+      <![CDATA[Game Restarted succesfully]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-12-03T13:12:24 GMT-05:00" name="Default suite" finished-at="2023-12-03T13:12:52 GMT-05:00" duration-ms="27490">
+  <suite started-at="2023-12-03T14:04:27 GMT-05:00" name="Default suite" finished-at="2023-12-03T14:04:55 GMT-05:00" duration-ms="27507">
     <groups>
     </groups>
-    <test started-at="2023-12-03T13:12:24 GMT-05:00" name="Default test" finished-at="2023-12-03T13:12:52 GMT-05:00" duration-ms="27490">
+    <test started-at="2023-12-03T14:04:27 GMT-05:00" name="Default test" finished-at="2023-12-03T14:04:55 GMT-05:00" duration-ms="27507">
       <class name="GameDemo.Demo1">
-        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:GameDemo.Demo1@729d991e]" started-at="2023-12-03T13:12:24 GMT-05:00" name="LaunchBrowser" finished-at="2023-12-03T13:12:30 GMT-05:00" duration-ms="5537" status="PASS">
+        <test-method is-config="true" signature="LaunchBrowser()[pri:0, instance:GameDemo.Demo1@729d991e]" started-at="2023-12-03T14:04:27 GMT-05:00" name="LaunchBrowser" finished-at="2023-12-03T14:04:30 GMT-05:00" duration-ms="2865" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LaunchBrowser -->
-        <test-method signature="Verify_Checkers_Game()[pri:0, instance:GameDemo.Demo1@729d991e]" started-at="2023-12-03T13:12:30 GMT-05:00" name="Verify_Checkers_Game" finished-at="2023-12-03T13:12:52 GMT-05:00" duration-ms="21632" status="PASS">
+        <test-method signature="Verify_Checkers_Game()[pri:0, instance:GameDemo.Demo1@729d991e]" started-at="2023-12-03T14:04:30 GMT-05:00" name="Verify_Checkers_Game" finished-at="2023-12-03T14:04:55 GMT-05:00" duration-ms="24324" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[page loaded succesfully]]>
+              <![CDATA[Page loaded succesfully]]>
+            </line>
+            <line>
+              <![CDATA[It's your move]]>
+            </line>
+            <line>
+              <![CDATA[Game Restarted succesfully]]>
             </line>
           </reporter-output>
         </test-method> <!-- Verify_Checkers_Game -->
-        <test-method is-config="true" signature="cleanup()[pri:0, instance:GameDemo.Demo1@729d991e]" started-at="2023-12-03T13:12:52 GMT-05:00" name="cleanup" finished-at="2023-12-03T13:12:52 GMT-05:00" duration-ms="289" status="PASS">
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:GameDemo.Demo1@729d991e]" started-at="2023-12-03T14:04:55 GMT-05:00" name="cleanup" finished-at="2023-12-03T14:04:55 GMT-05:00" duration-ms="285" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->

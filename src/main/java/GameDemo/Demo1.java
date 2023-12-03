@@ -38,11 +38,15 @@ public class Demo1 {
 	{
 		  String  message=driver.findElement(By.xpath("//p[@id='message']")).getText();
 		  if (message.contains("Select an orange piece to move.")) {
-			  Reporter.log("page loaded succesfully");
+			  Reporter.log("Page loaded succesfully");
 		  }
 		  driver.findElement(By.xpath("//div[@id='board']/div[6]/img[6]")).click();
 		  driver.findElement(By.xpath("//div[@id='board']/div[5]/img[7]")).click();
 		  Thread.sleep(2000);
+		  String  message1=driver.findElement(By.xpath("//p[@id='message']")).getText();
+		  if (message1.contains("Make a move.")) {
+			  Reporter.log("It's your move");
+		  }
 		  driver.findElement(By.xpath("//div[@id='board']/div[6]/img[4]")).click();
 		  Thread.sleep(2000);
 		  driver.findElement(By.xpath("//div[@id='board']/div[5]/img[5]")).click();
@@ -55,17 +59,19 @@ public class Demo1 {
 		  Thread.sleep(2000);
 		  driver.findElement(By.xpath("//div[@id='board']/div[5]/img[3]")).click();
 		  Thread.sleep(2000);
-		  
-
 		  driver.findElement(By.xpath("//div[@id='board']/div[7]/img[7]")).click();
 		  Thread.sleep(2000);
 		  driver.findElement(By.xpath("//div[@id='board']/div[5]/img[5]")).click();
 		  Thread.sleep(2000);
-		  String  message1=driver.findElement(By.xpath("//p[@id='message']")).getText();
+		  
 		  driver.findElement(By.xpath("//p[@class='footnote']/a[1]")).click();
 		  Thread.sleep(2000);
-		
-		
+		  driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[1]/div[1]/p[2]/a[1]")).click();
+		  Thread.sleep(2000);
+		  String  message2=driver.findElement(By.xpath("//p[@id='message']")).getText();
+		  if (message2.contains("Select an orange piece to move.")) {
+			  Reporter.log("Game Restarted succesfully");
+		  }
 	}
 	
 	@AfterTest
